@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation        Aqui neste arquivo estaram presentes todos os tipos de
+Documentation        Aqui neste arquivo estarão presentes todos os tipos de
 ...                  variáveis que iremos estudar ao longo do treinamento.
 
 Library              SeleniumLibrary
