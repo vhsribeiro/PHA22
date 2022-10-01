@@ -15,7 +15,7 @@ Dado que eu esteja na tela de cadastro
     Wait Until Page Contains    Novo Cliente
 
 E informe todos os dados necessários
-    ${EMAIL_FAKER}    FakerLibrary.email
+    ${EMAIL_FAKER}    FakerLibrary.EMAIL_FAKER
     ${PW_FAKER}       FakerLibrary.Password
     Input Text        ${CADASTRO.INPUT_EMAIL}                     ${EMAIL_FAKER}
     Input Password    ${CADASTRO.INPUT_SENHA}                     ${PW_FAKER}
