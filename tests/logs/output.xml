@@ -1,108 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20220930 21:29:09.709" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221001 02:26:51.838" rpa="false" schemaversion="3">
 <suite id="s1" name="Webautomation" source="C:\Users\Victor\Desktop\PHA22\tests\features\webautomation.robot">
 <kw name="Abrir o meu navegador" library="hooks" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220930 21:29:09.963" level="INFO">Opening browser 'chrome' to base url 'https://learningprime.com.br/'.</msg>
-<status status="PASS" starttime="20220930 21:29:09.963" endtime="20220930 21:29:17.277"/>
+<msg timestamp="20221001 02:26:52.144" level="INFO">Opening browser 'chrome' to base url 'https://learningprime.com.br/'.</msg>
+<status status="PASS" starttime="20221001 02:26:52.143" endtime="20221001 02:26:56.891"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220930 21:29:17.277" endtime="20220930 21:29:17.385"/>
+<status status="PASS" starttime="20221001 02:26:56.892" endtime="20221001 02:26:57.000"/>
 </kw>
-<status status="PASS" starttime="20220930 21:29:09.963" endtime="20220930 21:29:17.385"/>
+<status status="PASS" starttime="20221001 02:26:52.143" endtime="20221001 02:26:57.000"/>
 </kw>
 <test id="s1-t1" name="Cenario: Validando cadastro com sucesso no learningprime" line="25">
 <kw name="Dado que eu esteja na tela de cadastro" library="kws_cadastro">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>xpath=//a[@href='/login']</arg>
+<arg>${CADASTRO.BTN_ENTRAR}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220930 21:29:17.386" endtime="20220930 21:29:17.405"/>
+<status status="PASS" starttime="20221001 02:26:57.001" endtime="20221001 02:26:57.057"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//a[@href='/login']</arg>
+<arg>${CADASTRO.BTN_ENTRAR}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220930 21:29:17.405" level="INFO">Clicking element 'xpath=//a[@href='/login']'.</msg>
-<status status="PASS" starttime="20220930 21:29:17.405" endtime="20220930 21:29:17.905"/>
+<msg timestamp="20221001 02:26:57.058" level="INFO">Clicking element '//a[@href='/login']'.</msg>
+<status status="PASS" starttime="20221001 02:26:57.058" endtime="20221001 02:26:57.461"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>xpath=//a[@href='/signup']</arg>
+<arg>${CADASTRO.BTN_CRIAR}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220930 21:29:17.905" endtime="20220930 21:29:17.923"/>
+<status status="PASS" starttime="20221001 02:26:57.461" endtime="20221001 02:26:57.478"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//a[@href='/signup']</arg>
+<arg>${CADASTRO.BTN_CRIAR}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220930 21:29:17.924" level="INFO">Clicking element 'xpath=//a[@href='/signup']'.</msg>
-<status status="PASS" starttime="20220930 21:29:17.924" endtime="20220930 21:29:18.450"/>
+<msg timestamp="20221001 02:26:57.479" level="INFO">Clicking element '//a[@href='/signup']'.</msg>
+<status status="PASS" starttime="20221001 02:26:57.479" endtime="20221001 02:26:57.861"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Novo Cliente</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220930 21:29:18.450" endtime="20220930 21:29:18.457"/>
+<status status="PASS" starttime="20221001 02:26:57.861" endtime="20221001 02:26:57.869"/>
 </kw>
-<status status="PASS" starttime="20220930 21:29:17.386" endtime="20220930 21:29:18.457"/>
+<status status="PASS" starttime="20221001 02:26:57.001" endtime="20221001 02:26:57.869"/>
 </kw>
 <kw name="E informe todos os dados necessários" library="kws_cadastro">
 <kw name="FakerLibrary.email">
 <var>${EMAIL_FAKER}</var>
-<msg timestamp="20220930 21:29:18.461" level="FAIL">No keyword with name 'FakerLibrary.email' found.</msg>
-<status status="FAIL" starttime="20220930 21:29:18.461" endtime="20220930 21:29:18.461"/>
+<msg timestamp="20221001 02:26:57.874" level="FAIL">No keyword with name 'FakerLibrary.email' found.</msg>
+<status status="FAIL" starttime="20221001 02:26:57.874" endtime="20221001 02:26:57.874"/>
 </kw>
 <kw name="FakerLibrary.Password">
 <var>${PW_FAKER}</var>
-<status status="NOT RUN" starttime="20220930 21:29:18.464" endtime="20220930 21:29:18.464"/>
+<status status="NOT RUN" starttime="20221001 02:26:57.878" endtime="20221001 02:26:57.878"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>id=spree_user_email</arg>
+<arg>${CADASTRO.INPUT_EMAIL}</arg>
 <arg>${EMAIL_FAKER}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220930 21:29:18.464" endtime="20220930 21:29:18.464"/>
+<status status="NOT RUN" starttime="20221001 02:26:57.878" endtime="20221001 02:26:57.878"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
-<arg>id=spree_user_password</arg>
+<arg>${CADASTRO.INPUT_SENHA}</arg>
 <arg>${PW_FAKER}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220930 21:29:18.464" endtime="20220930 21:29:18.464"/>
+<status status="NOT RUN" starttime="20221001 02:26:57.878" endtime="20221001 02:26:57.878"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
-<arg>id=spree_user_password_confirmation</arg>
+<arg>${CADASTRO.INPUT_SENHA_CONFIRMA}</arg>
 <arg>${PW_FAKER}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220930 21:29:18.464" endtime="20220930 21:29:18.464"/>
+<status status="NOT RUN" starttime="20221001 02:26:57.878" endtime="20221001 02:26:57.878"/>
 </kw>
-<status status="FAIL" starttime="20220930 21:29:18.457" endtime="20220930 21:29:18.465"/>
+<status status="FAIL" starttime="20221001 02:26:57.869" endtime="20221001 02:26:57.878"/>
 </kw>
 <kw name="Quando finalizar o cadastro" library="kws_cadastro">
-<status status="NOT RUN" starttime="20220930 21:29:18.465" endtime="20220930 21:29:18.465"/>
+<status status="NOT RUN" starttime="20221001 02:26:57.879" endtime="20221001 02:26:57.879"/>
 </kw>
 <kw name="Então devo ser direcionado para a tela Home do site" library="kws_cadastro">
-<status status="NOT RUN" starttime="20220930 21:29:18.465" endtime="20220930 21:29:18.466"/>
+<status status="NOT RUN" starttime="20221001 02:26:57.879" endtime="20221001 02:26:57.879"/>
 </kw>
 <kw name="E a seguinte mensagem deve ser apresentada." library="kws_cadastro">
-<status status="NOT RUN" starttime="20220930 21:29:18.466" endtime="20220930 21:29:18.466"/>
+<status status="NOT RUN" starttime="20221001 02:26:57.879" endtime="20221001 02:26:57.879"/>
 </kw>
 <tag>SIGNUP</tag>
-<status status="FAIL" starttime="20220930 21:29:17.385" endtime="20220930 21:29:18.466">No keyword with name 'FakerLibrary.email' found.</status>
+<status status="FAIL" starttime="20221001 02:26:57.000" endtime="20221001 02:26:57.880">No keyword with name 'FakerLibrary.email' found.</status>
 </test>
 <kw name="Fechar navegador" library="hooks" type="TEARDOWN">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220930 21:29:18.565" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220930 21:29:18.468" endtime="20220930 21:29:18.565"/>
+<msg timestamp="20221001 02:26:57.967" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221001 02:26:57.881" endtime="20221001 02:26:57.967"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220930 21:29:18.566" endtime="20220930 21:29:20.632"/>
+<status status="PASS" starttime="20221001 02:26:57.967" endtime="20221001 02:27:00.031"/>
 </kw>
-<status status="PASS" starttime="20220930 21:29:18.467" endtime="20220930 21:29:20.633"/>
+<status status="PASS" starttime="20221001 02:26:57.881" endtime="20221001 02:27:00.031"/>
 </kw>
 <doc>Aqui neste arquivo estarão presentes todos os tipos de
 variáveis que iremos estudar ao longo do treinamento.</doc>
-<status status="FAIL" starttime="20220930 21:29:09.710" endtime="20220930 21:29:20.633"/>
+<status status="FAIL" starttime="20221001 02:26:51.839" endtime="20221001 02:27:00.031"/>
 </suite>
 <statistics>
 <total>
@@ -116,7 +116,7 @@ variáveis que iremos estudar ao longo do treinamento.</doc>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220930 21:29:09.953" level="ERROR">Error in file 'C:\Users\Victor\Desktop\PHA22\src\config\package.robot' on line 8: Importing library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'FakerLibrary'
+<msg timestamp="20221001 02:26:52.132" level="ERROR">Error in file 'C:\Users\Victor\Desktop\PHA22\src\config\package.robot' on line 8: Importing library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'FakerLibrary'
 Traceback (most recent call last):
   None
 PYTHONPATH:
@@ -126,6 +126,5 @@ PYTHONPATH:
   C:\Users\Victor\AppData\Local\Programs\Python\Python310\lib
   C:\Users\Victor\AppData\Local\Programs\Python\Python310
   C:\Users\Victor\AppData\Local\Programs\Python\Python310\lib\site-packages</msg>
-<msg timestamp="20220930 21:29:09.959" level="WARN">Imported resource file 'C:\Users\Victor\Desktop\PHA22\src\pages\cadastro_page.robot' is empty.</msg>
 </errors>
 </robot>
