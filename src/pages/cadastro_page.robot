@@ -7,9 +7,9 @@ Documentation        Elementos da tela cadastro
 &{CADASTRO}
 ...            BTN_CRIAR=//a[@href='/signup']
 ...            BTN_ENTRAR=//a[@href='/login']
-...            INPUT_EMAIL=
-...            INPUT_SENHA=
-...            INPUT_SENHA_CONFIRMA=
-...            BTN_CADASTRAR=
+...            INPUT_EMAIL=//input[@id='spree_user_email']
+...            INPUT_SENHA=//input[@id='spree_user_password']
+...            INPUT_SENHA_CONFIRMA=//input[@id='spree_user_password_confirmation']
+...            BTN_CADASTRAR=//*[@value='Criar' and @type='submit']
 
 

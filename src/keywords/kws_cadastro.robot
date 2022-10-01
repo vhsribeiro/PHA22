@@ -18,11 +18,11 @@ E informe todos os dados necessários
     ${EMAIL_FAKER}    FakerLibrary.email
     ${PW_FAKER}       FakerLibrary.Password
     Input Text        ${CADASTRO.INPUT_EMAIL}                     ${EMAIL_FAKER}
-    Input Password    ${CADASTRO.INPUT_SENHA}                  ${PW_FAKER}
-    Input Password    ${CADASTRO.INPUT_SENHA_CONFIRMA}     ${PW_FAKER}
+    Input Password    ${CADASTRO.INPUT_SENHA}                     ${PW_FAKER}
+    Input Password    ${CADASTRO.INPUT_SENHA_CONFIRMA}            ${PW_FAKER}
     
 Quando finalizar o cadastro
-    Click Element    xpath=//*[@value='Criar' and @type='submit']
+    Click Element    ${CADASTRO.BTN_CADASTRAR}
 
 Então devo ser direcionado para a tela Home do site
     Wait Until Element Is Visible    xpath=//a[@href='/account']
