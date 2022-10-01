@@ -5,6 +5,7 @@ Documentation    Gerenciados de dependências. Usar Resource pra puxar pro resto
 Library    SeleniumLibrary
 Library    OperatingSystem
 Library    DebugLibrary
+Library    FakerLibrary    Locale=pt_BR
 
 Resource    ../keywords/kws_login.robot
 Resource    ../keywords/kws_cadastro.robot
